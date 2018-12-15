@@ -125,6 +125,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/justin/ros_test/build/mybot_control/cmake_install.cmake")
   include("/home/justin/ros_test/build/mybot_description/cmake_install.cmake")
   include("/home/justin/ros_test/build/mybot_gazebo/cmake_install.cmake")
+  include("/home/justin/ros_test/build/mybot_cpp/cmake_install.cmake")
 
 endif()
 
