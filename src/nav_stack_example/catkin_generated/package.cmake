@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "nav_stack_example")
+set(nav_stack_example_MAINTAINER "abc <abc@todo.todo>")
+set(nav_stack_example_DEPRECATED "")
+set(nav_stack_example_VERSION "0.0.0")
+set(nav_stack_example_BUILD_DEPENDS "costmap_2d" "navfn" "roscpp" "tf" "base_local_planner")
+set(nav_stack_example_RUN_DEPENDS "costmap_2d" "navfn" "roscpp" "tf" "base_local_planner")
+set(nav_stack_example_BUILDTOOL_DEPENDS "catkin")

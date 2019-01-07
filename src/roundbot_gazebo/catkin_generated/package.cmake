@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "roundbot_gazebo")
+set(roundbot_gazebo_MAINTAINER "micho <micho@todo.todo>")
+set(roundbot_gazebo_DEPRECATED "")
+set(roundbot_gazebo_VERSION "0.0.0")
+set(roundbot_gazebo_BUILD_DEPENDS "gazebo_ros")
+set(roundbot_gazebo_RUN_DEPENDS "gazebo_ros")
+set(roundbot_gazebo_BUILDTOOL_DEPENDS "catkin")

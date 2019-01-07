@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "ugv_course_libs")
+set(ugv_course_libs_MAINTAINER "micho <micho@todo.todo>")
+set(ugv_course_libs_DEPRECATED "")
+set(ugv_course_libs_VERSION "0.0.0")
+set(ugv_course_libs_BUILD_DEPENDS "sensor_msgs" "tf")
+set(ugv_course_libs_RUN_DEPENDS "sensor_msgs" "tf")
+set(ugv_course_libs_BUILDTOOL_DEPENDS "catkin")

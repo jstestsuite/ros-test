@@ -1,0 +1,8 @@
+prefix=/home/jman/ros/src/ugv_course/mantis_model/devel
+
+Name: mantis_model
+Description: Description of mantis_model
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jman/ros/src/ugv_course/mantis_model/devel/lib 
+Requires: 

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <param name="use_sim_time" value="true" />
+
+  <node pkg="state_space_example" type="state_space_example" name="odom_node" >
+    <param name="parent_frame" value="odom" />
+    <param name="child_frame" value="base_footprint" />
+  </node>
+
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" >
+    <rosparam file="$(find gmapping_example)/yaml/gmapping_params.yaml" />
+    <remap from="scan" to="/laser/scan" />
+  </node>
+
+  <node pkg="tf" type="static_transform_publisher" name="footprint2laser" args="0.2 0 0.1 0 0 0 /base_footprint /laser 20" />
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find nav_stack_example)/rviz/rviz_config_real_data.rviz" respawn="true" />
+
+</launch>

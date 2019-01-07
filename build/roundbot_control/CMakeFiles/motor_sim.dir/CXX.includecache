@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/justin/ros_test/src/roundbot_control/include/roundbot_control/MotorSim.h
+
+/home/justin/ros_test/src/roundbot_control/src/MotorSim.cpp
+roundbot_control/MotorSim.h
+-
+

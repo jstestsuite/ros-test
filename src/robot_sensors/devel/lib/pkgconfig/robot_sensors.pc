@@ -1,0 +1,8 @@
+prefix=/home/jman/ros/src/ugv_course/robot_sensors/devel
+
+Name: robot_sensors
+Description: Description of robot_sensors
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jman/ros/src/ugv_course/robot_sensors/devel/lib 
+Requires: 

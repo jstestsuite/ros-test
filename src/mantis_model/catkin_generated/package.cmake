@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mantis_model")
+set(mantis_model_MAINTAINER "abc <abc@todo.todo>")
+set(mantis_model_DEPRECATED "")
+set(mantis_model_VERSION "0.0.0")
+set(mantis_model_BUILD_DEPENDS "roscpp" "tf")
+set(mantis_model_RUN_DEPENDS "roscpp" "tf")
+set(mantis_model_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,8 @@
+prefix=/home/justin/ros_test/devel
+
+Name: turtlebot3_description
+Description: Description of turtlebot3_description
+Version: 1.1.0
+Cflags: 
+Libs: -L/home/justin/ros_test/devel/lib 
+Requires: urdf xacro

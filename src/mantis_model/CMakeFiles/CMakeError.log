@@ -1,0 +1,106 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3629213684/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3629213684.dir/build.make CMakeFiles/cmTryCompileExec3629213684.dir/build
+make[1]: Entering directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3629213684.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3629213684.dir/CheckSymbolExists.c.o   -c /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3629213684
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3629213684.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3629213684.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3629213684 -rdynamic 
+CMakeFiles/cmTryCompileExec3629213684.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3629213684] Error 1
+make[1]: Leaving directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3629213684/fast] Error 2
+
+File /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3719193145/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3719193145.dir/build.make CMakeFiles/cmTryCompileExec3719193145.dir/build
+make[1]: Entering directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3719193145.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3719193145.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3719193145
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3719193145.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3719193145.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3719193145 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3719193145] Error 1
+make[1]: Leaving directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3719193145/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/jman/ros/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3962979969/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3962979969.dir/build.make CMakeFiles/cmTryCompileExec3962979969.dir/build
+make[1]: Entering directory `/home/jman/ros/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jman/ros/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3962979969.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3962979969.dir/CheckSymbolExists.c.o   -c /home/jman/ros/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3962979969
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3962979969.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3962979969.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3962979969 -rdynamic 
+CMakeFiles/cmTryCompileExec3962979969.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+make[1]: Leaving directory `/home/jman/ros/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3962979969] Error 1
+make: *** [cmTryCompileExec3962979969/fast] Error 2
+
+File /home/jman/ros/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/jman/ros/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4202420942/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4202420942.dir/build.make CMakeFiles/cmTryCompileExec4202420942.dir/build
+make[1]: Entering directory `/home/jman/ros/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jman/ros/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4202420942.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec4202420942.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4202420942
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4202420942.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec4202420942.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4202420942 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jman/ros/src/ugv_course/mantis_model/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec4202420942] Error 1
+make: *** [cmTryCompileExec4202420942/fast] Error 2
+
+

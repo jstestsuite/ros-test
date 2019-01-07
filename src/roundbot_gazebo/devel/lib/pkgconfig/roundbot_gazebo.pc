@@ -1,0 +1,8 @@
+prefix=/home/jman/ros/src/ugv_course/roundbot_gazebo/devel
+
+Name: roundbot_gazebo
+Description: Description of roundbot_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jman/ros/src/ugv_course/roundbot_gazebo/devel/lib 
+Requires: 

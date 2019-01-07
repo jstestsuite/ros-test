@@ -1,0 +1,7 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~ref_lat" : \b [double] Reference coordinates min: -90.0, default: 42.0, max: 90.0
+- \b "~ref_lon" : \b [double] Reference coordinates min: -179.99, default: -83.0, max: 180.0
+

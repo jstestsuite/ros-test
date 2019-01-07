@@ -1,0 +1,8 @@
+\subsubsection usage Usage
+\verbatim
+<node name="ugv_course_gazebo_plugins" pkg="ugv_course_gazebo_plugins" type="ugv_course_gazebo_plugins">
+  <param name="ref_lat" type="double" value="42.0" />
+  <param name="ref_lon" type="double" value="-83.0" />
+</node>
+\endverbatim
+

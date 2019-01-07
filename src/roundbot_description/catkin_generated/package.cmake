@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "roundbot_description")
+set(roundbot_description_MAINTAINER "micho <micho@todo.todo>")
+set(roundbot_description_DEPRECATED "")
+set(roundbot_description_VERSION "0.0.0")
+set(roundbot_description_BUILD_DEPENDS "urdf" "xacro")
+set(roundbot_description_RUN_DEPENDS "urdf" "xacro")
+set(roundbot_description_BUILDTOOL_DEPENDS "catkin")

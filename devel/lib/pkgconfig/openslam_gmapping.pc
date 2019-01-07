@@ -1,0 +1,8 @@
+prefix=/home/justin/ros_test/devel
+
+Name: openslam_gmapping
+Description: Description of openslam_gmapping
+Version: 0.1.2
+Cflags: -I/home/justin/ros_test/src/gmapping/include
+Libs: -L/home/justin/ros_test/devel/lib -lgridfastslam -lscanmatcher -lsensor_base -lsensor_range -lsensor_odometry -lutils
+Requires: 
