@@ -1,6 +1,6 @@
 global_costmap:
-  global_frame: /map
-  robot_base_frame: /base_footprint
+  global_frame: map
+  robot_base_frame: base_footprint
   transform_tolerance: 0.2
   robot_radius: 0.6
 
@@ -24,8 +24,8 @@ global_costmap:
 
     observation_sources: lidar_scan    
     lidar_scan: 
-      topic: /laser_front/scan_filtered
-      sensor_frame: /laser_front
+      topic: laser_front/scan_filtered
+      sensor_frame: laser_front
       data_type: LaserScan
       marking: true
       clearing: true

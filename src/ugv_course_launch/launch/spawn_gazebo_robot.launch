@@ -21,7 +21,7 @@
 
   <!-- Gazebo model spawner -->
   <group ns="$(arg robot)" >
-    <param name="robot_description" command="$(find xacro)/xacro '$(arg description_pkg)/urdf/$(arg robot).urdf.xacro' gps:=$(arg gps) gps_rate:=$(arg gps_rate) pub_tf:=$(arg pub_tf) pub_odom:=$(arg pub_odom) pub_heading:=$(arg pub_heading) use_sensors:=$(arg use_sensors)" />
+    <param name="robot_description" command="$(find xacro)/xacro.py '$(arg description_pkg)/urdf/$(arg robot).urdf.xacro' gps:=$(arg gps) gps_rate:=$(arg gps_rate) pub_tf:=$(arg pub_tf) pub_odom:=$(arg pub_odom) pub_heading:=$(arg pub_heading) use_sensors:=$(arg use_sensors)" />
     <node pkg="gazebo_ros" type="spawn_model"  name="spawn_$(arg robot)" args="-urdf -param robot_description -model $(arg robot) -x $(arg start_x) -y $(arg start_y)"/>
     <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
       <param name="publish_frequency" type="double" value="$(arg tf_freq)" />

@@ -1,4 +1,4 @@
-The system is: Linux - 3.19.0-58-generic - x86_64
+The system is: Linux - 3.19.0-56-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,35 +23,35 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp
+Change Dir: /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec379015323/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec379015323.dir/build.make CMakeFiles/cmTryCompileExec379015323.dir/build
-make[1]: Entering directory `/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec379015323.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec379015323.dir/testCCompiler.c.o   -c /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec379015323
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec379015323.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec379015323.dir/testCCompiler.c.o  -o cmTryCompileExec379015323 -rdynamic 
-make[1]: Leaving directory `/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+Run Build Command:/usr/bin/make "cmTryCompileExec1458418377/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1458418377.dir/build.make CMakeFiles/cmTryCompileExec1458418377.dir/build
+make[1]: Entering directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1458418377.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1458418377.dir/testCCompiler.c.o   -c /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec1458418377
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1458418377.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1458418377.dir/testCCompiler.c.o  -o cmTryCompileExec1458418377 -rdynamic 
+make[1]: Leaving directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp
+Change Dir: /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec226556741/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec226556741.dir/build.make CMakeFiles/cmTryCompileExec226556741.dir/build
-make[1]: Entering directory `/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec226556741.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec226556741.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec226556741
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec226556741.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTryCompileExec226556741.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec226556741 -rdynamic  
+Run Build Command:/usr/bin/make "cmTryCompileExec3738062066/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3738062066.dir/build.make CMakeFiles/cmTryCompileExec3738062066.dir/build
+make[1]: Entering directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3738062066.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3738062066.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec3738062066
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3738062066.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTryCompileExec3738062066.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3738062066 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
@@ -61,24 +61,24 @@ Thread model: posix
 gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec226556741' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec226556741 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec226556741.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory `/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3738062066' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3738062066 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec3738062066.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec226556741/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec226556741.dir/build.make CMakeFiles/cmTryCompileExec226556741.dir/build]
-  ignore line: [make[1]: Entering directory `/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec226556741.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec226556741.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec226556741]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec226556741.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec226556741.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec226556741 -rdynamic  ]
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3738062066/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3738062066.dir/build.make CMakeFiles/cmTryCompileExec3738062066.dir/build]
+  ignore line: [make[1]: Entering directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec3738062066.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3738062066.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec3738062066]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3738062066.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec3738062066.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3738062066 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
@@ -88,8 +88,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec226556741' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec226556741 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec226556741.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3738062066' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3738062066 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec3738062066.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
@@ -103,7 +103,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec226556741] ==> ignore
+    arg [cmTryCompileExec3738062066] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
@@ -115,7 +115,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTryCompileExec226556741.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec3738062066.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -145,32 +145,32 @@ Parsed C implicit link information from above output:
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp
+Change Dir: /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec2646940309/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2646940309.dir/build.make CMakeFiles/cmTryCompileExec2646940309.dir/build
-make[1]: Entering directory `/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec2646940309.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2646940309.dir/testCXXCompiler.cxx.o -c /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec2646940309
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2646940309.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec2646940309.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2646940309 -rdynamic 
-make[1]: Leaving directory `/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+Run Build Command:/usr/bin/make "cmTryCompileExec1421852017/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1421852017.dir/build.make CMakeFiles/cmTryCompileExec1421852017.dir/build
+make[1]: Entering directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1421852017.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1421852017.dir/testCXXCompiler.cxx.o -c /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec1421852017
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1421852017.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec1421852017.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1421852017 -rdynamic 
+make[1]: Leaving directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp
+Change Dir: /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec2890200371/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2890200371.dir/build.make CMakeFiles/cmTryCompileExec2890200371.dir/build
-make[1]: Entering directory `/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec2890200371.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2890200371.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec2890200371
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2890200371.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTryCompileExec2890200371.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2890200371 -rdynamic  
+Run Build Command:/usr/bin/make "cmTryCompileExec2190204791/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2190204791.dir/build.make CMakeFiles/cmTryCompileExec2190204791.dir/build
+make[1]: Entering directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2190204791.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2190204791.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec2190204791
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2190204791.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTryCompileExec2190204791.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2190204791 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
@@ -180,24 +180,24 @@ Thread model: posix
 gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2890200371' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2890200371 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2890200371.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory `/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2190204791' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2190204791 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2190204791.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec2890200371/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2890200371.dir/build.make CMakeFiles/cmTryCompileExec2890200371.dir/build]
-  ignore line: [make[1]: Entering directory `/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec2890200371.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2890200371.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec2890200371]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2890200371.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec2890200371.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2890200371 -rdynamic  ]
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec2190204791/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2190204791.dir/build.make CMakeFiles/cmTryCompileExec2190204791.dir/build]
+  ignore line: [make[1]: Entering directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec2190204791.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2190204791.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec2190204791]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2190204791.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec2190204791.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2190204791 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
@@ -207,8 +207,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2890200371' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2890200371 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2890200371.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2190204791' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2190204791 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2190204791.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
@@ -222,7 +222,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec2890200371] ==> ignore
+    arg [cmTryCompileExec2190204791] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
@@ -234,7 +234,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTryCompileExec2890200371.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec2190204791.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -262,32 +262,62 @@ Parsed CXX implicit link information from above output:
 
 
 Determining if files pthread.h exist passed with the following output:
-Change Dir: /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp
+Change Dir: /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1435872191/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1435872191.dir/build.make CMakeFiles/cmTryCompileExec1435872191.dir/build
-make[1]: Entering directory `/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1435872191.dir/CheckIncludeFiles.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1435872191.dir/CheckIncludeFiles.c.o   -c /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
-Linking C executable cmTryCompileExec1435872191
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1435872191.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec1435872191.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1435872191 -rdynamic 
-make[1]: Leaving directory `/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+Run Build Command:/usr/bin/make "cmTryCompileExec3629051479/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3629051479.dir/build.make CMakeFiles/cmTryCompileExec3629051479.dir/build
+make[1]: Entering directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3629051479.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3629051479.dir/CheckIncludeFiles.c.o   -c /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec3629051479
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3629051479.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3629051479.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec3629051479 -rdynamic 
+make[1]: Leaving directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
-Change Dir: /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp
+Change Dir: /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec769880658/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec769880658.dir/build.make CMakeFiles/cmTryCompileExec769880658.dir/build
-make[1]: Entering directory `/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec769880658.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec769880658.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec769880658
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec769880658.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec769880658.dir/CheckFunctionExists.c.o  -o cmTryCompileExec769880658 -rdynamic -lpthread 
-make[1]: Leaving directory `/home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+Run Build Command:/usr/bin/make "cmTryCompileExec1300813889/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1300813889.dir/build.make CMakeFiles/cmTryCompileExec1300813889.dir/build
+make[1]: Entering directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1300813889.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1300813889.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1300813889
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1300813889.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1300813889.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1300813889 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/dlebowski/workspace/extraRepo/ros2/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/jman/ros/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3947943697/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3947943697.dir/build.make CMakeFiles/cmTryCompileExec3947943697.dir/build
+make[1]: Entering directory `/home/jman/ros/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jman/ros/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3947943697.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3947943697.dir/CheckIncludeFiles.c.o   -c /home/jman/ros/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec3947943697
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3947943697.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3947943697.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec3947943697 -rdynamic 
+make[1]: Leaving directory `/home/jman/ros/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/jman/ros/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2710781599/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2710781599.dir/build.make CMakeFiles/cmTryCompileExec2710781599.dir/build
+make[1]: Entering directory `/home/jman/ros/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jman/ros/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2710781599.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2710781599.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2710781599
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2710781599.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2710781599.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2710781599 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/jman/ros/src/ugv_course/ugv_course_launch/CMakeFiles/CMakeTmp'
 
 

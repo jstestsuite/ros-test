@@ -34,7 +34,7 @@ int main(int argc, char** argv)
   joint_state.name[0] = "left_wheel_joint";
   joint_state.name[1] = "right_wheel_joint";
 
-  pub_joints = n.advertise<sensor_msgs::JointState>("/joint_states", 1);
+  pub_joints = n.advertise<sensor_msgs::JointState>("joint_states", 1);
 
   ros::Timer timer = n.createTimer(ros::Duration(0.02), timerCallback);
 

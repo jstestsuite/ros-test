@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "roundbot_description"
-PROJECT_SPACE_DIR = "/home/jman/final_project/src/ugv_course/roundbot_description/devel"
+PROJECT_SPACE_DIR = "/home/jman/ros/src/ugv_course/roundbot_description/devel"
 PROJECT_VERSION = "0.0.0"

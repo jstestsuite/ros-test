@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jman/final_project/src/ugv_course/robot_sensors
+CMAKE_SOURCE_DIR = /home/jman/ros/src/ugv_course/robot_sensors
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jman/final_project/src/ugv_course/robot_sensors
+CMAKE_BINARY_DIR = /home/jman/ros/src/ugv_course/robot_sensors
 
 # Utility rule file for download_extra_data.
 
@@ -60,6 +60,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/jman/final_project/src/ugv_course/robot_sensors && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jman/final_project/src/ugv_course/robot_sensors /home/jman/final_project/src/ugv_course/robot_sensors /home/jman/final_project/src/ugv_course/robot_sensors /home/jman/final_project/src/ugv_course/robot_sensors /home/jman/final_project/src/ugv_course/robot_sensors/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jman/ros/src/ugv_course/robot_sensors && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jman/ros/src/ugv_course/robot_sensors /home/jman/ros/src/ugv_course/robot_sensors /home/jman/ros/src/ugv_course/robot_sensors /home/jman/ros/src/ugv_course/robot_sensors /home/jman/ros/src/ugv_course/robot_sensors/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 

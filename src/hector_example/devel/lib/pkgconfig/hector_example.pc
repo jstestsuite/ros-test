@@ -1,0 +1,8 @@
+prefix=/home/jman/ros/src/ugv_course/hector_example/devel
+
+Name: hector_example
+Description: Description of hector_example
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jman/ros/src/ugv_course/hector_example/devel/lib 
+Requires: 

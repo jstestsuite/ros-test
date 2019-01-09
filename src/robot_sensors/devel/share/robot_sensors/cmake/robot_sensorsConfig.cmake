@@ -67,8 +67,8 @@ set(robot_sensors_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(robot_sensors_SOURCE_PREFIX /home/jman/final_project/src/ugv_course/robot_sensors)
-  set(robot_sensors_DEVEL_PREFIX /home/jman/final_project/src/ugv_course/robot_sensors/devel)
+  set(robot_sensors_SOURCE_PREFIX /home/jman/ros/src/ugv_course/robot_sensors)
+  set(robot_sensors_DEVEL_PREFIX /home/jman/ros/src/ugv_course/robot_sensors/devel)
   set(robot_sensors_INSTALL_PREFIX "")
   set(robot_sensors_PREFIX ${robot_sensors_DEVEL_PREFIX})
 else()
@@ -103,7 +103,7 @@ if(NOT " " STREQUAL " ")
         message(FATAL_ERROR "Project 'robot_sensors' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  Ask the maintainer 'abc <abc@todo.todo>' to fix it.")
       endif()
     else()
-      message(FATAL_ERROR "Project 'robot_sensors' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/jman/final_project/src/ugv_course/robot_sensors/${idir}'.  Ask the maintainer 'abc <abc@todo.todo>' to fix it.")
+      message(FATAL_ERROR "Project 'robot_sensors' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/jman/ros/src/ugv_course/robot_sensors/${idir}'.  Ask the maintainer 'abc <abc@todo.todo>' to fix it.")
     endif()
     _list_append_unique(robot_sensors_INCLUDE_DIRS ${include})
   endforeach()
@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/jman/final_project/src/ugv_course/robot_sensors/devel/lib;/home/jman/final_project/devel/lib;/home/jman/ros/devel/lib;/opt/ros/indigo/lib)
+    foreach(path /home/jman/ros/src/ugv_course/robot_sensors/devel/lib;/home/jman/ros/devel/lib;/home/jman/ugv_course_code/devel/lib;/opt/ros/indigo/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

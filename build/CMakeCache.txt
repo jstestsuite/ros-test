@@ -1092,6 +1092,12 @@ sensor_odometry_LIB_DEPENDS:STATIC=general;sensor_base;
 sensor_range_LIB_DEPENDS:STATIC=general;sensor_base;
 
 //Value Computed by CMake
+simple_navigation_goals_BINARY_DIR:STATIC=/home/justin/ros_test/build/simple_navigation_goals
+
+//Value Computed by CMake
+simple_navigation_goals_SOURCE_DIR:STATIC=/home/justin/ros_test/src/simple_navigation_goals
+
+//Value Computed by CMake
 slam_gmapping_BINARY_DIR:STATIC=/home/justin/ros_test/build/slam_gmapping/slam_gmapping
 
 //Value Computed by CMake
@@ -1507,7 +1513,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=27
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=29
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

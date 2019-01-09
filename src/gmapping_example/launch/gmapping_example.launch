@@ -14,7 +14,7 @@
   <node pkg="state_space_example" type="state_space_example" name="odom_node" >
     <param name="parent_frame" value="odom" />
     <param name="child_frame" value="base_footprint" />
-    <remap from="twist" to="/roundbot/twist" />
+    <remap from="twist" to="roundbot/twist" />
   </node>
 
   <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" >

@@ -1,9 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-<!--include file="$(find ugv_course_launch)/launch/roundbot_gmapping_sim.launch" /-->
-<!--include file="$(find mybot_description)/launch/mybot_rviz_amcl.launch" /-->
   <master auto="start"/>
-
   <param name="/use_sim_time" value="true"/>
   <!--- Run gmapping -->
   <node pkg="gmapping" name="slam_gmapping" type="slam_gmapping" output="screen">

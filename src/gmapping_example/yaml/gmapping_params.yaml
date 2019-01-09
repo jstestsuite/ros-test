@@ -1,4 +1,4 @@
-base_frame: /base_footprint
+base_frame: base_footprint
 map_frame: map
 odom_frame: odom
 

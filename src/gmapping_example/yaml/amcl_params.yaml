@@ -18,7 +18,7 @@ odom_alpha2: 0.5 #Rotation as a function of translation
 odom_alpha3: 0.2 #Translation as a function of translation
 odom_alpha4: 0.5 #Translation as a function of rotation
 
-odom_frame_id: /odom
-base_frame_id: /base_footprint
-global_frame_id: /map
+odom_frame_id: odom
+base_frame_id: base_footprint
+global_frame_id: map
 

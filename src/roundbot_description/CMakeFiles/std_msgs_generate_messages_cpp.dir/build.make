@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jman/final_project/src/ugv_course/roundbot_description
+CMAKE_SOURCE_DIR = /home/jman/ros/src/ugv_course/roundbot_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jman/final_project/src/ugv_course/roundbot_description
+CMAKE_BINARY_DIR = /home/jman/ros/src/ugv_course/roundbot_description
 
 # Utility rule file for std_msgs_generate_messages_cpp.
 
@@ -60,6 +60,6 @@ CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
 .PHONY : CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 CMakeFiles/std_msgs_generate_messages_cpp.dir/depend:
-	cd /home/jman/final_project/src/ugv_course/roundbot_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jman/final_project/src/ugv_course/roundbot_description /home/jman/final_project/src/ugv_course/roundbot_description /home/jman/final_project/src/ugv_course/roundbot_description /home/jman/final_project/src/ugv_course/roundbot_description /home/jman/final_project/src/ugv_course/roundbot_description/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jman/ros/src/ugv_course/roundbot_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jman/ros/src/ugv_course/roundbot_description /home/jman/ros/src/ugv_course/roundbot_description /home/jman/ros/src/ugv_course/roundbot_description /home/jman/ros/src/ugv_course/roundbot_description /home/jman/ros/src/ugv_course/roundbot_description/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 

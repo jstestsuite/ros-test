@@ -15,6 +15,6 @@
   </include>
 
   <include file="$(find ugv_course_gazebo)/launch/gazebo_world.launch" >
-    <arg name="world_name" value="$(find ugv_course_gazebo)/worlds/a_three_room_building_world_simple.world" />
+    <arg name="world_name" value="$(find ugv_course_gazebo)/worlds/aPuzzleWorld.world" />
   </include>
 </launch>

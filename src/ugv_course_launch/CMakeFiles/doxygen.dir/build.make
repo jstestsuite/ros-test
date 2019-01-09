@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jman/final_project/src/ugv_course/ugv_course_launch
+CMAKE_SOURCE_DIR = /home/jman/ros/src/ugv_course/ugv_course_launch
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jman/final_project/src/ugv_course/ugv_course_launch
+CMAKE_BINARY_DIR = /home/jman/ros/src/ugv_course/ugv_course_launch
 
 # Utility rule file for doxygen.
 
@@ -60,6 +60,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/jman/final_project/src/ugv_course/ugv_course_launch && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jman/final_project/src/ugv_course/ugv_course_launch /home/jman/final_project/src/ugv_course/ugv_course_launch /home/jman/final_project/src/ugv_course/ugv_course_launch /home/jman/final_project/src/ugv_course/ugv_course_launch /home/jman/final_project/src/ugv_course/ugv_course_launch/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jman/ros/src/ugv_course/ugv_course_launch && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jman/ros/src/ugv_course/ugv_course_launch /home/jman/ros/src/ugv_course/ugv_course_launch /home/jman/ros/src/ugv_course/ugv_course_launch /home/jman/ros/src/ugv_course/ugv_course_launch /home/jman/ros/src/ugv_course/ugv_course_launch/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 
