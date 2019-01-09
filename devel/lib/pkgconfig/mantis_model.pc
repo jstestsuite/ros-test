@@ -1,0 +1,8 @@
+prefix=/home/justin/ros_test/devel
+
+Name: mantis_model
+Description: Description of mantis_model
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/justin/ros_test/devel/lib 
+Requires: 

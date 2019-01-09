@@ -1,0 +1,8 @@
+prefix=/home/justin/ros_test/devel
+
+Name: gps_sim_project
+Description: Description of gps_sim_project
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/justin/ros_test/devel/lib 
+Requires: 

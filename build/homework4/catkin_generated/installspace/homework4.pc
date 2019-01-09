@@ -1,0 +1,8 @@
+prefix=/home/justin/ros_test/install
+
+Name: homework4
+Description: Description of homework4
+Version: 0.0.0
+Cflags: -I/home/justin/ros_test/install/include
+Libs: -L/home/justin/ros_test/install/lib 
+Requires: 

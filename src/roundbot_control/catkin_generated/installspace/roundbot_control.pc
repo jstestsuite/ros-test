@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: roundbot_control
+Description: Description of roundbot_control
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -lwheel_speed_controller -ldiff_controller
+Requires: 

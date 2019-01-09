@@ -1,0 +1,8 @@
+prefix=/home/justin/ros_test/install
+
+Name: robot_sensors
+Description: Description of robot_sensors
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/justin/ros_test/install/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: mantis_model
+Description: Description of mantis_model
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

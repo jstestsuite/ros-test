@@ -1,0 +1,9 @@
+/home/jman/ros/src/ugv_course/gmapping_example/CMakeFiles/_catkin_empty_exported_target.dir
+/home/jman/ros/src/ugv_course/gmapping_example/CMakeFiles/clean_test_results.dir
+/home/jman/ros/src/ugv_course/gmapping_example/CMakeFiles/clean_test_results_gmapping_example.dir
+/home/jman/ros/src/ugv_course/gmapping_example/CMakeFiles/download_extra_data.dir
+/home/jman/ros/src/ugv_course/gmapping_example/CMakeFiles/doxygen.dir
+/home/jman/ros/src/ugv_course/gmapping_example/gtest/CMakeFiles/gtest.dir
+/home/jman/ros/src/ugv_course/gmapping_example/gtest/CMakeFiles/gtest_main.dir
+/home/jman/ros/src/ugv_course/gmapping_example/CMakeFiles/run_tests.dir
+/home/jman/ros/src/ugv_course/gmapping_example/CMakeFiles/tests.dir

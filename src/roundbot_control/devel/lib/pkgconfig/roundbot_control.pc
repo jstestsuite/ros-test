@@ -1,0 +1,8 @@
+prefix=/home/jman/ros/src/ugv_course/roundbot_control/devel
+
+Name: roundbot_control
+Description: Description of roundbot_control
+Version: 0.0.0
+Cflags: -I/home/jman/ros/src/ugv_course/roundbot_control/include
+Libs: -L/home/jman/ros/src/ugv_course/roundbot_control/devel/lib -lwheel_speed_controller -ldiff_controller
+Requires: 

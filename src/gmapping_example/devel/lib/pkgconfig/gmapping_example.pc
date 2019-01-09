@@ -1,0 +1,8 @@
+prefix=/home/jman/ros/src/ugv_course/gmapping_example/devel
+
+Name: gmapping_example
+Description: Description of gmapping_example
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jman/ros/src/ugv_course/gmapping_example/devel/lib 
+Requires: 

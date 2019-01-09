@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/jman/ros/src/ugv_course/roundbot_control/devel/setup.sh

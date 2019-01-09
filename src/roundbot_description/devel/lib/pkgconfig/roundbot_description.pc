@@ -1,0 +1,8 @@
+prefix=/home/jman/final_project/src/ugv_course/roundbot_description/devel
+
+Name: roundbot_description
+Description: Description of roundbot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jman/final_project/src/ugv_course/roundbot_description/devel/lib 
+Requires: 

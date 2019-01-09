@@ -1,0 +1,8 @@
+prefix=/home/jman/final_project/src/ugv_course/ugv_course_launch/devel
+
+Name: ugv_course_launch
+Description: Description of ugv_course_launch
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jman/final_project/src/ugv_course/ugv_course_launch/devel/lib 
+Requires: 

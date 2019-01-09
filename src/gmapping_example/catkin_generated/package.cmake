@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "gmapping_example")
+set(gmapping_example_MAINTAINER "abc <abc@todo.todo>")
+set(gmapping_example_DEPRECATED "")
+set(gmapping_example_VERSION "0.0.0")
+set(gmapping_example_BUILD_DEPENDS )
+set(gmapping_example_RUN_DEPENDS )
+set(gmapping_example_BUILDTOOL_DEPENDS "catkin")

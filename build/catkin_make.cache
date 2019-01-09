@@ -1,2 +1,2 @@
-mybot_control:mybot_cpp:mybot_description:mybot_gazebo
+gmapping:gmapping_example:mantis_model:mybot_control:mybot_cpp:mybot_description:mybot_gazebo:mybot_navigation:robot_sensors:roundbot_control:roundbot_description:roundbot_gazebo:state_space_example:ugv_course_gazebo:ugv_course_launch:ugv_course_libs
 -DCATKIN_DEVEL_PREFIX=/home/justin/ros_test/devel -DCMAKE_INSTALL_PREFIX=/home/justin/ros_test/install -G Unix Makefiles

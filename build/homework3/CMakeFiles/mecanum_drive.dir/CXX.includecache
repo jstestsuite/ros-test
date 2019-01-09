@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/justin/ros_test/src/homework3/src/mecanum_drive.cpp
+ros/ros.h
+-
+std_msgs/Float64MultiArray.h
+-
+geometry_msgs/Twist.h
+-
+

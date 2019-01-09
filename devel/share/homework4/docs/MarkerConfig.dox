@@ -1,0 +1,11 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~x" : \b [double] Position min: -5.0, default: 0.0, max: 5.0
+- \b "~y" : \b [double] Position min: -5.0, default: 0.0, max: 5.0
+- \b "~z" : \b [double] Position min: -5.0, default: 0.0, max: 5.0
+- \b "~roll" : \b [double] Orientation min: -3.14, default: 0.0, max: 3.14
+- \b "~pitch" : \b [double] Orientation min: -3.14, default: 0.0, max: 3.14
+- \b "~yaw" : \b [double] Orientation min: -3.14, default: 0.0, max: 3.14
+

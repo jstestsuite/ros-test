@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package>
+  <name>slam_gmapping</name>
+  <version>0.0.0</version>
+  <description>The slam_gmapping package</description>
+  <maintainer email="abc@todo.todo">abc</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <export>
+  </export>
+</package>
