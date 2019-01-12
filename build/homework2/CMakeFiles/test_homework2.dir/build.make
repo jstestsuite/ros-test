@@ -57,7 +57,69 @@ include homework2/CMakeFiles/test_homework2.dir/progress.make
 # Include the compile flags for this target's objects.
 include homework2/CMakeFiles/test_homework2.dir/flags.make
 
-homework2/CMakeFiles/test_homework2.dir/requires:
+homework2/CMakeFiles/test_homework2.dir/test/test_homework2.cpp.o: homework2/CMakeFiles/test_homework2.dir/flags.make
+homework2/CMakeFiles/test_homework2.dir/test/test_homework2.cpp.o: /home/justin/ros_test/src/homework2/test/test_homework2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/justin/ros_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object homework2/CMakeFiles/test_homework2.dir/test/test_homework2.cpp.o"
+	cd /home/justin/ros_test/build/homework2 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_homework2.dir/test/test_homework2.cpp.o -c /home/justin/ros_test/src/homework2/test/test_homework2.cpp
+
+homework2/CMakeFiles/test_homework2.dir/test/test_homework2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_homework2.dir/test/test_homework2.cpp.i"
+	cd /home/justin/ros_test/build/homework2 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/justin/ros_test/src/homework2/test/test_homework2.cpp > CMakeFiles/test_homework2.dir/test/test_homework2.cpp.i
+
+homework2/CMakeFiles/test_homework2.dir/test/test_homework2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_homework2.dir/test/test_homework2.cpp.s"
+	cd /home/justin/ros_test/build/homework2 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/justin/ros_test/src/homework2/test/test_homework2.cpp -o CMakeFiles/test_homework2.dir/test/test_homework2.cpp.s
+
+homework2/CMakeFiles/test_homework2.dir/test/test_homework2.cpp.o.requires:
+
+.PHONY : homework2/CMakeFiles/test_homework2.dir/test/test_homework2.cpp.o.requires
+
+homework2/CMakeFiles/test_homework2.dir/test/test_homework2.cpp.o.provides: homework2/CMakeFiles/test_homework2.dir/test/test_homework2.cpp.o.requires
+	$(MAKE) -f homework2/CMakeFiles/test_homework2.dir/build.make homework2/CMakeFiles/test_homework2.dir/test/test_homework2.cpp.o.provides.build
+.PHONY : homework2/CMakeFiles/test_homework2.dir/test/test_homework2.cpp.o.provides
+
+homework2/CMakeFiles/test_homework2.dir/test/test_homework2.cpp.o.provides.build: homework2/CMakeFiles/test_homework2.dir/test/test_homework2.cpp.o
+
+
+# Object files for target test_homework2
+test_homework2_OBJECTS = \
+"CMakeFiles/test_homework2.dir/test/test_homework2.cpp.o"
+
+# External object files for target test_homework2
+test_homework2_EXTERNAL_OBJECTS =
+
+/home/justin/ros_test/devel/lib/homework2/test_homework2: homework2/CMakeFiles/test_homework2.dir/test/test_homework2.cpp.o
+/home/justin/ros_test/devel/lib/homework2/test_homework2: homework2/CMakeFiles/test_homework2.dir/build.make
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /opt/ros/melodic/lib/libroscpp.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /opt/ros/melodic/lib/librosconsole.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /opt/ros/melodic/lib/librostime.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /opt/ros/melodic/lib/libcpp_common.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: gtest/googlemock/gtest/libgtest.so
+/home/justin/ros_test/devel/lib/homework2/test_homework2: homework2/CMakeFiles/test_homework2.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/justin/ros_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/justin/ros_test/devel/lib/homework2/test_homework2"
+	cd /home/justin/ros_test/build/homework2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_homework2.dir/link.txt --verbose=$(VERBOSE)
+
+# Rule to build all files generated by this target.
+homework2/CMakeFiles/test_homework2.dir/build: /home/justin/ros_test/devel/lib/homework2/test_homework2
+
+.PHONY : homework2/CMakeFiles/test_homework2.dir/build
+
+homework2/CMakeFiles/test_homework2.dir/requires: homework2/CMakeFiles/test_homework2.dir/test/test_homework2.cpp.o.requires
 
 .PHONY : homework2/CMakeFiles/test_homework2.dir/requires
 

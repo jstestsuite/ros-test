@@ -1,0 +1,8 @@
+prefix=/home/jman/ros/src/ugv_course/state_space_example/devel
+
+Name: state_space_example
+Description: Description of state_space_example
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jman/ros/src/ugv_course/state_space_example/devel/lib 
+Requires: 

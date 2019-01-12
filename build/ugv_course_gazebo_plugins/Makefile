@@ -68,6 +68,39 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -91,29 +124,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -124,16 +134,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,36 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-ugv_course_gazebo_plugins/CMakeFiles/view_control_plugin.dir/rule:
-	cd /home/justin/ros_test/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_course_gazebo_plugins/CMakeFiles/view_control_plugin.dir/rule
-.PHONY : ugv_course_gazebo_plugins/CMakeFiles/view_control_plugin.dir/rule
-
-# Convenience name for target.
-view_control_plugin: ugv_course_gazebo_plugins/CMakeFiles/view_control_plugin.dir/rule
-
-.PHONY : view_control_plugin
-
-# fast build rule for target.
-view_control_plugin/fast:
-	cd /home/justin/ros_test/build && $(MAKE) -f ugv_course_gazebo_plugins/CMakeFiles/view_control_plugin.dir/build.make ugv_course_gazebo_plugins/CMakeFiles/view_control_plugin.dir/build
-.PHONY : view_control_plugin/fast
-
-# Convenience name for target.
-ugv_course_gazebo_plugins/CMakeFiles/pose_plugin.dir/rule:
-	cd /home/justin/ros_test/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_course_gazebo_plugins/CMakeFiles/pose_plugin.dir/rule
-.PHONY : ugv_course_gazebo_plugins/CMakeFiles/pose_plugin.dir/rule
-
-# Convenience name for target.
-pose_plugin: ugv_course_gazebo_plugins/CMakeFiles/pose_plugin.dir/rule
-
-.PHONY : pose_plugin
-
-# fast build rule for target.
-pose_plugin/fast:
-	cd /home/justin/ros_test/build && $(MAKE) -f ugv_course_gazebo_plugins/CMakeFiles/pose_plugin.dir/build.make ugv_course_gazebo_plugins/CMakeFiles/pose_plugin.dir/build
-.PHONY : pose_plugin/fast
-
-# Convenience name for target.
 ugv_course_gazebo_plugins/CMakeFiles/gps_plugin.dir/rule:
 	cd /home/justin/ros_test/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_course_gazebo_plugins/CMakeFiles/gps_plugin.dir/rule
 .PHONY : ugv_course_gazebo_plugins/CMakeFiles/gps_plugin.dir/rule
@@ -213,79 +183,19 @@ gps_plugin/fast:
 .PHONY : gps_plugin/fast
 
 # Convenience name for target.
-ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule:
-	cd /home/justin/ros_test/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
-.PHONY : ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+ugv_course_gazebo_plugins/CMakeFiles/view_control_plugin.dir/rule:
+	cd /home/justin/ros_test/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_course_gazebo_plugins/CMakeFiles/view_control_plugin.dir/rule
+.PHONY : ugv_course_gazebo_plugins/CMakeFiles/view_control_plugin.dir/rule
 
 # Convenience name for target.
-visualization_msgs_generate_messages_eus: ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+view_control_plugin: ugv_course_gazebo_plugins/CMakeFiles/view_control_plugin.dir/rule
 
-.PHONY : visualization_msgs_generate_messages_eus
+.PHONY : view_control_plugin
 
 # fast build rule for target.
-visualization_msgs_generate_messages_eus/fast:
-	cd /home/justin/ros_test/build && $(MAKE) -f ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
-.PHONY : visualization_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
-	cd /home/justin/ros_test/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-.PHONY : ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_cpp: ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_cpp
-
-# fast build rule for target.
-visualization_msgs_generate_messages_cpp/fast:
-	cd /home/justin/ros_test/build && $(MAKE) -f ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
-.PHONY : visualization_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
-	cd /home/justin/ros_test/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-.PHONY : ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_lisp: ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_lisp
-
-# fast build rule for target.
-visualization_msgs_generate_messages_lisp/fast:
-	cd /home/justin/ros_test/build && $(MAKE) -f ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
-.PHONY : visualization_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
-	cd /home/justin/ros_test/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-.PHONY : ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_py: ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_py
-
-# fast build rule for target.
-visualization_msgs_generate_messages_py/fast:
-	cd /home/justin/ros_test/build && $(MAKE) -f ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
-.PHONY : visualization_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/justin/ros_test/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
-.PHONY : ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_nodejs: ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-visualization_msgs_generate_messages_nodejs/fast:
-	cd /home/justin/ros_test/build && $(MAKE) -f ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make ugv_course_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
-.PHONY : visualization_msgs_generate_messages_nodejs/fast
+view_control_plugin/fast:
+	cd /home/justin/ros_test/build && $(MAKE) -f ugv_course_gazebo_plugins/CMakeFiles/view_control_plugin.dir/build.make ugv_course_gazebo_plugins/CMakeFiles/view_control_plugin.dir/build
+.PHONY : view_control_plugin/fast
 
 # Convenience name for target.
 ugv_course_gazebo_plugins/CMakeFiles/ugv_course_gazebo_plugins_gencfg.dir/rule:
@@ -301,6 +211,21 @@ ugv_course_gazebo_plugins_gencfg: ugv_course_gazebo_plugins/CMakeFiles/ugv_cours
 ugv_course_gazebo_plugins_gencfg/fast:
 	cd /home/justin/ros_test/build && $(MAKE) -f ugv_course_gazebo_plugins/CMakeFiles/ugv_course_gazebo_plugins_gencfg.dir/build.make ugv_course_gazebo_plugins/CMakeFiles/ugv_course_gazebo_plugins_gencfg.dir/build
 .PHONY : ugv_course_gazebo_plugins_gencfg/fast
+
+# Convenience name for target.
+ugv_course_gazebo_plugins/CMakeFiles/pose_plugin.dir/rule:
+	cd /home/justin/ros_test/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_course_gazebo_plugins/CMakeFiles/pose_plugin.dir/rule
+.PHONY : ugv_course_gazebo_plugins/CMakeFiles/pose_plugin.dir/rule
+
+# Convenience name for target.
+pose_plugin: ugv_course_gazebo_plugins/CMakeFiles/pose_plugin.dir/rule
+
+.PHONY : pose_plugin
+
+# fast build rule for target.
+pose_plugin/fast:
+	cd /home/justin/ros_test/build && $(MAKE) -f ugv_course_gazebo_plugins/CMakeFiles/pose_plugin.dir/build.make ugv_course_gazebo_plugins/CMakeFiles/pose_plugin.dir/build
+.PHONY : pose_plugin/fast
 
 src/GpsPlugin.o: src/GpsPlugin.cpp.o
 
@@ -390,21 +315,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... test"
+	@echo "... gps_plugin"
 	@echo "... install"
 	@echo "... view_control_plugin"
-	@echo "... rebuild_cache"
-	@echo "... pose_plugin"
-	@echo "... gps_plugin"
-	@echo "... visualization_msgs_generate_messages_eus"
-	@echo "... edit_cache"
-	@echo "... visualization_msgs_generate_messages_cpp"
-	@echo "... visualization_msgs_generate_messages_lisp"
-	@echo "... visualization_msgs_generate_messages_py"
-	@echo "... visualization_msgs_generate_messages_nodejs"
 	@echo "... list_install_components"
 	@echo "... ugv_course_gazebo_plugins_gencfg"
+	@echo "... rebuild_cache"
+	@echo "... pose_plugin"
+	@echo "... install/local"
+	@echo "... test"
+	@echo "... edit_cache"
 	@echo "... src/GpsPlugin.o"
 	@echo "... src/GpsPlugin.i"
 	@echo "... src/GpsPlugin.s"

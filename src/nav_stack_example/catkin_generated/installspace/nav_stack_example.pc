@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: nav_stack_example
-Description: Description of nav_stack_example
-Version: 0.0.0
-Cflags: 
-Libs: -L/usr/local/lib 
-Requires: 

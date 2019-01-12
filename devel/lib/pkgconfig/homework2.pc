@@ -3,6 +3,6 @@ prefix=/home/justin/ros_test/devel
 Name: homework2
 Description: Description of homework2
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/justin/ros_test/devel/include
 Libs: -L/home/justin/ros_test/devel/lib 
 Requires: 
