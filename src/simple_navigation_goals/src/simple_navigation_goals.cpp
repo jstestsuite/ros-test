@@ -34,9 +34,11 @@ srand (time(NULL));
   MoveBaseClient ac("move_base", true);
 
   //wait for the action server to come up
-  while(!ac.waitForServer(ros::Duration(5.0))){
-    ROS_INFO("Waiting for the move_base action server to come up");
-  }
+  
+
+//while(!ac.waitForServer(ros::Duration(5.0))){
+    //ROS_INFO("Waiting for the move_base action server to come up");
+  //}
 
   
 
@@ -59,6 +61,7 @@ goal.target_pose.pose.position.y = yran;
 
   ROS_INFO("Sending goal");
   ac.sendGoal(goal);
+  ROS_INFO("goal sent!");
 while (count >= 0)
 {
   ac.waitForResult();
@@ -76,6 +79,6 @@ ROS_INFO("Hooray, the base moved 1 meter forward");
 count --;
 }
 
-ROS_INFO("/n Everything worked you damn genious");
+ROS_INFO("/n Finished Sending Goals");
   return 0;
 }

@@ -1,0 +1,8 @@
+prefix=/home/justin/ros_test/devel
+
+Name: rl_common
+Description: Description of rl_common
+Version: 0.0.0
+Cflags: -I/home/justin/ros_test/src/rl-texplore-ros-pkg-master/src/rl_common/include
+Libs: -L/home/justin/ros_test/devel/lib 
+Requires: message_runtime
