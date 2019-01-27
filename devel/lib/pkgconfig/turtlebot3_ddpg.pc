@@ -1,0 +1,8 @@
+prefix=/home/justin/ros_test/devel
+
+Name: turtlebot3_ddpg
+Description: Description of turtlebot3_ddpg
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/justin/ros_test/devel/lib 
+Requires: rospy

@@ -1026,7 +1026,7 @@ pose_plugin_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libdynamic_reconfigu
 rl_agent_BINARY_DIR:STATIC=/home/justin/ros_test/build/rl-texplore-ros-pkg-master/src/rl_agent
 
 //The directory containing a CMake configuration file for rl_agent.
-rl_agent_DIR:PATH=/home/justin/ros_test/devel/share/rl_agent/cmake
+rl_agent_DIR:PATH=/home/justin/catkin_ws/devel/share/rl_agent/cmake
 
 //Value Computed by CMake
 rl_agent_SOURCE_DIR:STATIC=/home/justin/ros_test/src/rl-texplore-ros-pkg-master/src/rl_agent
@@ -1035,7 +1035,7 @@ rl_agent_SOURCE_DIR:STATIC=/home/justin/ros_test/src/rl-texplore-ros-pkg-master/
 rl_common_BINARY_DIR:STATIC=/home/justin/ros_test/build/rl-texplore-ros-pkg-master/src/rl_common
 
 //The directory containing a CMake configuration file for rl_common.
-rl_common_DIR:PATH=/home/justin/ros_test/devel/share/rl_common/cmake
+rl_common_DIR:PATH=/home/justin/catkin_ws/devel/share/rl_common/cmake
 
 //Value Computed by CMake
 rl_common_SOURCE_DIR:STATIC=/home/justin/ros_test/src/rl-texplore-ros-pkg-master/src/rl_common
@@ -1044,7 +1044,7 @@ rl_common_SOURCE_DIR:STATIC=/home/justin/ros_test/src/rl-texplore-ros-pkg-master
 rl_env_BINARY_DIR:STATIC=/home/justin/ros_test/build/rl-texplore-ros-pkg-master/src/rl_env
 
 //The directory containing a CMake configuration file for rl_env.
-rl_env_DIR:PATH=/home/justin/ros_test/devel/share/rl_env/cmake
+rl_env_DIR:PATH=/home/justin/catkin_ws/devel/share/rl_env/cmake
 
 //Value Computed by CMake
 rl_env_SOURCE_DIR:STATIC=/home/justin/ros_test/src/rl-texplore-ros-pkg-master/src/rl_env
@@ -1059,7 +1059,7 @@ rl_experiment_SOURCE_DIR:STATIC=/home/justin/ros_test/src/rl-texplore-ros-pkg-ma
 rl_msgs_BINARY_DIR:STATIC=/home/justin/ros_test/build/rl-texplore-ros-pkg-master/src/rl_msgs
 
 //The directory containing a CMake configuration file for rl_msgs.
-rl_msgs_DIR:PATH=/home/justin/ros_test/devel/share/rl_msgs/cmake
+rl_msgs_DIR:PATH=/home/justin/catkin_ws/devel/share/rl_msgs/cmake
 
 //Value Computed by CMake
 rl_msgs_SOURCE_DIR:STATIC=/home/justin/ros_test/src/rl-texplore-ros-pkg-master/src/rl_msgs
@@ -1206,10 +1206,22 @@ turtlebot3_bringup_BINARY_DIR:STATIC=/home/justin/ros_test/build/turtlebot3/turt
 turtlebot3_bringup_SOURCE_DIR:STATIC=/home/justin/ros_test/src/turtlebot3/turtlebot3_bringup
 
 //Value Computed by CMake
+turtlebot3_ddpg_BINARY_DIR:STATIC=/home/justin/ros_test/build/turtlebot3_ddpg
+
+//Value Computed by CMake
+turtlebot3_ddpg_SOURCE_DIR:STATIC=/home/justin/ros_test/src/turtlebot3_ddpg
+
+//Value Computed by CMake
 turtlebot3_description_BINARY_DIR:STATIC=/home/justin/ros_test/build/turtlebot3/turtlebot3_description
 
 //Value Computed by CMake
 turtlebot3_description_SOURCE_DIR:STATIC=/home/justin/ros_test/src/turtlebot3/turtlebot3_description
+
+//Value Computed by CMake
+turtlebot3_dqn_BINARY_DIR:STATIC=/home/justin/ros_test/build/turtlebot3_dqn
+
+//Value Computed by CMake
+turtlebot3_dqn_SOURCE_DIR:STATIC=/home/justin/ros_test/src/turtlebot3_dqn
 
 //Value Computed by CMake
 turtlebot3_example_BINARY_DIR:STATIC=/home/justin/ros_test/build/turtlebot3/turtlebot3_example
@@ -1228,6 +1240,12 @@ turtlebot3_gazebo_BINARY_DIR:STATIC=/home/justin/ros_test/build/turtlebot3_simul
 
 //Value Computed by CMake
 turtlebot3_gazebo_SOURCE_DIR:STATIC=/home/justin/ros_test/src/turtlebot3_simulations/turtlebot3_gazebo
+
+//Value Computed by CMake
+turtlebot3_machine_learning_BINARY_DIR:STATIC=/home/justin/ros_test/build/turtlebot3_machine_learning
+
+//Value Computed by CMake
+turtlebot3_machine_learning_SOURCE_DIR:STATIC=/home/justin/ros_test/src/turtlebot3_machine_learning
 
 //Value Computed by CMake
 turtlebot3_msgs_BINARY_DIR:STATIC=/home/justin/ros_test/build/turtlebot3_msgs
@@ -1636,7 +1654,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=37
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=40
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

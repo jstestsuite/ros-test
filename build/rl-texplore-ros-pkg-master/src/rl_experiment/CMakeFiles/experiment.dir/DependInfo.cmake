@@ -17,9 +17,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/justin/ros_test/src/rl-texplore-ros-pkg-master/src/rl_common/include"
-  "/home/justin/ros_test/src/rl-texplore-ros-pkg-master/src/rl_env/include"
-  "/home/justin/ros_test/src/rl-texplore-ros-pkg-master/src/rl_agent/include"
+  "/home/justin/catkin_ws/src/rl-texplore-ros-pkg-master/src/rl_common/include"
+  "/home/justin/catkin_ws/src/rl-texplore-ros-pkg-master/src/rl_env/include"
+  "/home/justin/catkin_ws/src/rl-texplore-ros-pkg-master/src/rl_agent/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

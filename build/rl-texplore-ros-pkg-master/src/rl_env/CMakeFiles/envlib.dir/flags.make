@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"rl_env\" -Denvlib_EXPORTS
 
-CXX_INCLUDES = -I/home/justin/ros_test/src/rl-texplore-ros-pkg-master/src/rl_env/include -I/home/justin/ros_test/devel/include -I/home/justin/ros_test/src/rl-texplore-ros-pkg-master/src/rl_common/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/justin/ros_test/src/rl-texplore-ros-pkg-master/src/rl_env/include -I/home/justin/catkin_ws/devel/include -I/home/justin/catkin_ws/src/rl-texplore-ros-pkg-master/src/rl_common/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 
