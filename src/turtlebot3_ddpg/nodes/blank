@@ -1,0 +1,12 @@
+pause proxy
+unpaus proxy
+get goal distnace
+get odometry - from ros message
+get state
+set reward
+step
+reset
+
+
+publish cmd_vel
+sub odom

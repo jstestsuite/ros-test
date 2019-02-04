@@ -50,7 +50,7 @@ class Window(QMainWindow):
 
 
     def plot(self):
-        self.qValuePlt = pg.PlotWidget(self, title="Average max Q-value")
+        self.qValuePlt = pg.PlotWidget(self, title="Average loss")
         self.qValuePlt.move(0, 320)
         self.qValuePlt.resize(600, 300)
         self.timer1 = pg.QtCore.QTimer()

@@ -39,6 +39,8 @@ from tensorflow.keras.models import Model
 
 
 EPISODES = 3000
+GAMMA = 0.99
+TAU = 0.001
 
 class ReinforceAgent():
     def __init__(self, state_size, action_size):
@@ -52,7 +54,6 @@ class ReinforceAgent():
         self.action_size = action_size
         self.episode_step = 6000
         self.target_update = 2000
-        self.discount_factor = 0.99
         self.learning_rate = 0.00025
         self.epsilon = 1.0
         self.epsilon_decay = 0.99
@@ -61,44 +62,42 @@ class ReinforceAgent():
         self.train_start = 32
         self.memory = deque(maxlen=1000000)
 
-        self.model = self.buildActor()
-        self.target_model = self.buildActor()
 
-        self.critic = self.buildCritic()
-        self.target_critic = self.buildCritic()
+	self.TAU = 0.001     #Target Network HyperParameters
+    	self.LRA = 0.0001    #Learning rate for Actor
+	self.LRC = 0.001 #Lerning rate for Critic
+
+        self.model, self.weights, self.state2 = self.buildActor()
+        self.target_model, self.target_weights, self.target_state = self.buildActor()
+
+        self.critic, self.state, self.action = self.buildCritic()
+        self.target_critic, _, _ = self.buildCritic()
 
         self.updateTargetModel()
 
 #added
 
         self.sess = tf.Session()
-        #self.model , self.weights, self.state = self.create_actor_network(state_size, action_size)   
-        #self.target_model, self.target_weights, self.target_state = self.create_actor_network(state_size, action_size) 
-        self.action_gradient = tf.placeholder(tf.float32,[None, action_size])
+        
+        self.action_gradient = tf.placeholder(tf.float32,[None, 2])
         self.params_grad = tf.gradients(self.model.output, self.model.weights, -self.action_gradient)
         grads = zip(self.params_grad, self.model.weights)
-        optimize = tf.train.AdamOptimizer(self.learning_rate).apply_gradients(grads)
+        self.optimize = tf.train.AdamOptimizer(self.learning_rate).apply_gradients(grads)
         self.sess.run(tf.global_variables_initializer())
 
-        self.action_grads = tf.gradients(self.critic.output, self.model.output) #GRADIENTS for policy update
+        self.action_grads = tf.gradients(self.critic.output, self.action) #GRADIENTS for policy update
 #end add
 
-        if self.load_model:
-            self.model.set_weights(load_model(self.dirPath+str(self.load_episode)+".h5").get_weights())
-
-            with open(self.dirPath+str(self.load_episode)+'.json') as outfile:
-                param = json.load(outfile)
-                self.epsilon = param.get('epsilon')
 
 
     def buildCritic(self):
-        state = keras.layers.Input(shape=(16,), name='main_input')
+        s = keras.layers.Input(shape=(14,), name='state')
 
-        d1 = Dense(512, activation='relu')(state)
+        d1 = Dense(512, activation='relu')(s)
 
 
-        action = keras.layers.Input(shape=(2,), name='aux_input')
-        x = keras.layers.concatenate([d1, action])
+        a = keras.layers.Input(shape=(2,), name='action')
+        x = keras.layers.concatenate([d1, a])
 
         x = Dense(512, activation='relu')(x)
         x = Dense(512, activation='relu')(x)
@@ -107,21 +106,21 @@ class ReinforceAgent():
 
         q_val= Dense(1, activation='sigmoid', name='main_output')(x)
 
-        critic = Model(inputs=[state, action], outputs=[q_val])
-        critic.summary()
+        critic = Model(inputs=[s, a], outputs=[q_val])
+        #critic.summary()
 
         critic.compile(optimizer=tf.train.AdamOptimizer(), 
               loss='mse',
               metrics=['accuracy'])
-        return critic
+        return critic, s, a
 
     def buildActor(self):
-        state = keras.layers.Input(shape=(16,), name='main_input')
+        state = keras.layers.Input(shape=(14,), name='main_input')
 
 
         x = Dense(512, activation='relu')(state)
-        x = Dense(512, activation='relu')(state)
-        x = Dense(512, activation='relu')(state)
+        x = Dense(512, activation='relu')(x)
+        x = Dense(512, activation='relu')(x)
 
 
         lin_vel = Dense(1, activation='sigmoid', name='lin_vel')(x)
@@ -129,19 +128,19 @@ class ReinforceAgent():
         output = keras.layers.concatenate([lin_vel, ang_vel])
 
         actor = Model(inputs=[state], outputs=[output])
-	actor.summary()
+	#actor.summary()
         
         actor.compile(optimizer=tf.train.AdamOptimizer(), 
               loss='mse',
               metrics=['accuracy'])
 
-        return actor
+        return actor, actor.trainable_weights, state
 
 
 #added
     def train(self, states, action_grads):
         self.sess.run(self.optimize, feed_dict={
-            self.state: states,
+            self.state2: states,
             self.action_gradient: action_grads
         })
 
@@ -152,35 +151,41 @@ class ReinforceAgent():
             actor_target_weights[i] = self.TAU * actor_weights[i] + (1 - self.TAU)* actor_target_weights[i]
         self.target_model.set_weights(actor_target_weights)
 
+
+    def target_train_c(self):
+        critic_weights = self.target_critic.get_weights()
+        critic_target_weights = self.target_critic.get_weights()
+        for i in xrange(len(critic_weights)):
+            critic_target_weights[i] = self.TAU * critic_weights[i] + (1 - self.TAU)* critic_target_weights[i]
+	self.target_critic.set_weights(critic_target_weights)
+
     def gradients(self, states, actions):
-        return self.sess.run(self.action_grads, feed_dict={
+        grad = self.sess.run(self.action_grads, feed_dict={
             self.state: states,
             self.action: actions
-})[0]
+	})[0]
+	return grad
 
 #end add
 
 #Need to update
-    def getQvalue(self, reward, next_target, done):
-        if done:
-            return reward
-        else:
-            return reward + self.discount_factor * np.amax(next_target)
-
 
 #should be OK
     def updateTargetModel(self):
-        self.target_model.set_weights(self.model.get_weights())
-        self.target_critic.set_weights(self.critic.get_weights())
+        #self.target_model.set_weights(self.model.get_weights())
+        #self.target_critic.set_weights(self.critic.get_weights())
+	self.target_train()
+	self.target_train_c()
 
 
 #should be OK
     def getAction(self, state):
         if np.random.rand() <= self.epsilon:
             self.q_value = [random.uniform(0, 1.0), random.uniform(-1.0, 1.0)]
-            return random.uniform(-1.0, 1.0)
+            return self.q_value
         else:
-            q_value = self.model.predict(state.reshape(1, len(state)))
+            q_value = self.target_model.predict(state.reshape(1, len(state)))
+	    q_value= q_value.flatten()
             self.q_value = q_value
             return q_value
 
@@ -197,8 +202,9 @@ class ReinforceAgent():
     def trainModel(self, target=False):
         env.pause_proxy()
         mini_batch = random.sample(self.memory, self.batch_size)
-        X_batch = np.empty((0, self.state_size), dtype=np.float64)
-        Y_batch = np.empty((0, self.action_size), dtype=np.float64)
+        X_batch = np.empty(([0,14]), dtype=np.float64)
+        X_batch2 = np.empty(([0,2]), dtype=np.float64)
+        Y_batch = np.empty((0), dtype=np.float64)
 
         for i in range(self.batch_size):
             states = mini_batch[i][0]
@@ -209,27 +215,36 @@ class ReinforceAgent():
 	    #print len(states), "\n"
             q_value = self.model.predict(states.reshape(1, len(states)))
 
-            self.q_value = q_value
 
-            if target:
-                next_target = self.target_model.predict(next_states.reshape(1, len(next_states)))
+            next_target = self.target_model.predict(next_states.reshape(1, len(next_states)))
 
-            else:
-                next_target = self.actor.predict(next_states.reshape(1, len(next_states)))
+	    next_target = next_target[0][:]
+            next_target = next_target.reshape(1, len())
 
-            next_q_value = self.getQvalue(rewards, next_target, dones)
+            
+	    next_q = self.target_critic.predict([next_states.reshape(1, len(next_states)), next_target ])
 
-            X_batch = np.append(X_batch, np.array([states.copy()]), axis=0)
-            Y_sample = q_value.copy()
+            Y_sample = rewards+GAMMA*next_q
 
-            Y_sample[0][actions] = next_q_value
-            Y_batch = np.append(Y_batch, np.array([Y_sample[0]]), axis=0)
+	    test = states.reshape(1, len(next_states))
+            X_batch = np.append(X_batch, test, axis = 0)
+            X_batch2 = np.append(X_batch2, np.asarray(actions).reshape(1,2), axis = 0)   
 
-            if dones:
-                X_batch = np.append(X_batch, np.array([next_states.copy()]), axis=0)
-                Y_batch = np.append(Y_batch, np.array([[rewards] * self.action_size]), axis=0)
-#get reqard to use for x_batch and output to use for y_batch
-        #self.critic.fit(X_batch, Y_batch, batch_size=self.batch_size, epochs=1, verbose=0)
+
+            Y_batch = np.append(Y_batch, Y_sample)
+
+
+
+        self.critic.fit([X_batch, X_batch2], Y_batch, batch_size=self.batch_size, epochs=1, verbose=0)
+	with tf.Session() as sess:
+	     #grads=self.action_grads, feed_dict={
+            	#self.state: states,
+            	#self.action: actions}	
+		grads =self.gradients(X_batch, X_batch2)
+	     #print X_batch.shape
+	     #print grads.shape
+		self.train(X_batch, grads)
+
         env.unpause_proxy()
 
 
@@ -240,7 +255,7 @@ if __name__ == '__main__':
     pub_get_action = rospy.Publisher('get_action', Float32MultiArray, queue_size=5)
     result = Float32MultiArray()
     get_action = Float32MultiArray()
-
+    past_action = [0.0,0.0]
     state_size = 12
     action_size = 5
 
@@ -255,10 +270,12 @@ if __name__ == '__main__':
         done = False
         state = env.reset()
         score = 0
+	
         for t in range(agent.episode_step):
             action = agent.getAction(state)
-
-            next_state, reward, done = env.step(action)
+	    #print action
+	    #print "ACTION IS PRINTED"
+            next_state, reward, done = env.step(action, past_action)
 	    #print len(state), "\n"
             agent.appendMemory(state, action, reward, next_state, done)
 
@@ -272,11 +289,11 @@ if __name__ == '__main__':
             state = next_state
             get_action.data = [action, score, reward]
             pub_get_action.publish(get_action)
-
-            if e % 10 == 0:
-                agent.model.save(agent.dirPath + str(e) + '.h5')
-                with open(agent.dirPath + str(e) + '.json', 'w') as outfile:
-                    json.dump(param_dictionary, outfile)
+	    past_action = action
+            #if e % 10 == 0:#
+           #     agent.model.save(agent.dirPath + str(e) + '.h5')#
+             #   with open(agent.dirPath + str(e) + '.json', 'w') as outfile:
+            #        json.dump(param_dictionary, outfile)
 
             if t >= 400:
                 rospy.loginfo("Time out!!")
@@ -299,8 +316,8 @@ if __name__ == '__main__':
                 break
 
             global_step += 1
-            if global_step % agent.target_update == 0:
-                rospy.loginfo("UPDATE TARGET NETWORK")
+           # if global_step % agent.target_update == 0:
+            #    rospy.loginfo("UPDATE TARGET NETWORK")
 
         if agent.epsilon > agent.epsilon_min:
             agent.epsilon *= agent.epsilon_decay

@@ -28,11 +28,11 @@ from geometry_msgs.msg import Pose
 class Respawn():
     def __init__(self):
         self.modelPath = os.path.dirname(os.path.realpath(__file__))
-        self.modelPath = self.modelPath.replace('turtlebot3_dqn/src/turtlebot3_dqn',
+        self.modelPath = self.modelPath.replace('turtlebot3_ddpg/src/turtlebot3_ddpg',
                                                 'turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_square/goal_box/model.sdf')
         self.f = open(self.modelPath, 'r')
         self.model = self.f.read()
-        self.stage = rospy.get_param('/stage_number')
+        self.stage = 2
         self.goal_position = Pose()
         self.init_goal_x = 0.6
         self.init_goal_y = 0.0

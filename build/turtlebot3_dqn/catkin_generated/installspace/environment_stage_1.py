@@ -33,7 +33,6 @@ class Env():
         self.goal_x = 0
         self.goal_y = 0
         self.heading = 0
-
         self.action_size = action_size
         self.initGoal = True
         self.get_goalbox = False
@@ -44,9 +43,7 @@ class Env():
         self.unpause_proxy = rospy.ServiceProxy('gazebo/unpause_physics', Empty)
         self.pause_proxy = rospy.ServiceProxy('gazebo/pause_physics', Empty)
         self.respawn_goal = Respawn()
-        self.past_distance = 0.0
 
- 
     def unpause_proxy(self):
         self.unpause_proxy   
     def pause_proxy(self):
@@ -74,7 +71,7 @@ class Env():
 
         self.heading = round(heading, 2)
 
-    def getState(self, scan, past_action):
+    def getState(self, scan):
         scan_range = []
         heading = self.heading
         min_range = 0.15
@@ -95,21 +92,22 @@ class Env():
         if current_distance < 0.2:
             self.get_goalbox = True
 
-        return scan_range + [past_action[0], past_action[1], heading, current_distance], done
+        return scan_range + [heading, current_distance], done
 
     def setReward(self, state, done, action):
-
+        yaw_reward = []
         current_distance = state[-1]
         heading = state[-2]
 
+        for i in range(5):
+            angle = -pi / 4 + heading + (pi / 8 * i) + pi / 2
+            tr = 1 - 4 * math.fabs(0.5 - math.modf(0.25 + 0.5 * angle % (2 * math.pi) / math.pi)[0])
+            yaw_reward.append(tr)
 
-        distance_rate = (self.past_distance - current_distance) 
+        distance_rate = 2 ** (current_distance / self.goal_distance)
+        reward = ((round(yaw_reward[action] * 5, 2)) * distance_rate)
 
-
-        reward = (500 * distance_rate)
-        self.past_distance = current_distance
-        
-	if done:
+        if done:
             rospy.loginfo("Collision!!")
             reward = -200
             self.pub_cmd_vel.publish(Twist())
@@ -124,16 +122,14 @@ class Env():
 
         return reward
 
-    def step(self, action, past_action):
-
-        ang_vel = action[1]
+    def step(self, action):
+        max_angular_vel = 1.5
+        ang_vel = ((self.action_size - 1)/2 - action) * max_angular_vel * 0.5
 
         vel_cmd = Twist()
-        vel_cmd.linear.x = action[0]
+        vel_cmd.linear.x = 0.15
         vel_cmd.angular.z = ang_vel
         self.pub_cmd_vel.publish(vel_cmd)
-
-        
 
         data = None
         while data is None:
@@ -142,7 +138,7 @@ class Env():
             except:
                 pass
 
-        state, done = self.getState(data, past_action)
+        state, done = self.getState(data)
         reward = self.setReward(state, done, action)
 
         return np.asarray(state), reward, done

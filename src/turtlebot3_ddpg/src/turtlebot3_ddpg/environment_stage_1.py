@@ -53,7 +53,7 @@ class Env():
         self.pause_proxy
 
     def getGoalDistace(self):
-        goal_distance = round(math.hypot(self.goal_x - self.position.x, self.goal_y - self.position.y), 2)
+        goal_distance = math.hypot(self.goal_x - self.position.x, self.goal_y - self.position.y)
 
         return goal_distance
 
@@ -111,7 +111,7 @@ class Env():
         
 	if done:
             rospy.loginfo("Collision!!")
-            reward = -200
+            reward = -150
             self.pub_cmd_vel.publish(Twist())
 
         if self.get_goalbox:
@@ -125,11 +125,14 @@ class Env():
         return reward
 
     def step(self, action, past_action):
-
+	#print "Action: ", action
         ang_vel = action[1]
-
+	if ang_vel >= 1.0:
+		ang_vel = 1.0
+	if ang_vel <= -1.0:
+		ang_vel = -1.0
         vel_cmd = Twist()
-        vel_cmd.linear.x = action[0]
+        vel_cmd.linear.x = action[0]*0.3
         vel_cmd.angular.z = ang_vel
         self.pub_cmd_vel.publish(vel_cmd)
 
@@ -166,7 +169,7 @@ class Env():
             self.initGoal = False
 
         self.goal_distance = self.getGoalDistace()
-        state, done = self.getState(data)
+        state, done = self.getState(data, [0.,0.])
 
         return np.asarray(state)
 

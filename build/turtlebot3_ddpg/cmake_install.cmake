@@ -61,6 +61,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_ddpg" TYPE PROGRAM FILES "/home/justin/ros_test/build/turtlebot3_ddpg/catkin_generated/installspace/ddpg_classes.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_ddpg" TYPE PROGRAM FILES "/home/justin/ros_test/build/turtlebot3_ddpg/catkin_generated/installspace/result_graph")
 endif()
 
@@ -82,6 +86,18 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_ddpg" TYPE PROGRAM FILES "/home/justin/ros_test/build/turtlebot3_ddpg/catkin_generated/installspace/environment_stage_1.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_ddpg" TYPE PROGRAM FILES "/home/justin/ros_test/build/turtlebot3_ddpg/catkin_generated/installspace/environment_stage_2.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_ddpg" TYPE PROGRAM FILES "/home/justin/ros_test/build/turtlebot3_ddpg/catkin_generated/installspace/environment_stage_3.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_ddpg" TYPE PROGRAM FILES "/home/justin/ros_test/build/turtlebot3_ddpg/catkin_generated/installspace/environment_stage_4.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
