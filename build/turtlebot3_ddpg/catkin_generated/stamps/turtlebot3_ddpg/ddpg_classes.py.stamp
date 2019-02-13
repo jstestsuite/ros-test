@@ -38,7 +38,7 @@ MAX_STEPS = 400
 memory = deque(maxlen=1000000)
 dirPath = os.path.dirname(os.path.realpath(__file__))
 dirPath = dirPath.replace('turtlebot3_ddpg/nodes', 'turtlebot3_ddpg/save_model/ddpg_')
-load_weight = False
+load_weight = True
 
 class OrnsteinUhlenbeckActionNoise:
     def __init__(self, mu, sigma=0.3, theta=.15, dt=1e-2, x0=None):
@@ -70,7 +70,7 @@ def appendMemory(memory, state, action, reward, next_state, done):
 
 #need to analyze
 if __name__ == '__main__':
-    epsilon = 1.0
+    epsilon = 0.04
     epsilon_decay = 0.99
     epsilon_min = 0.04
     rospy.init_node('ddpg_classes')
@@ -133,7 +133,7 @@ if __name__ == '__main__':
 	    #### Start the training
 
 	    #if len(memory) > batch_size:
-	    if len(memory) > 400:
+	    if len(memory) > 32:
             	env.pause_proxy()
             	mini_batch = random.sample(memory, batch_size)
 		states = np.empty(([0,14]), dtype=np.float64)
@@ -154,9 +154,9 @@ if __name__ == '__main__':
             	y_i = []
             	for k in range(batch_size):
 		    
-            	    if dones[k]:
-            	        y_i.append(rewards[k])
-            	    else:
+            	    #if dones[k]:
+            	        #y_i.append(rewards[k])
+            	    #else:
 			y_i.append(rewards[k] + GAMMA * target_q[k])
 
 		h = np.asarray(y_i)
@@ -198,11 +198,11 @@ if __name__ == '__main__':
         if np.mod(e, 20) == 0:
             if (train_indicator):
                 print "Now we save model"
-                actor.model.save_weights("actormodel.h5", overwrite=True)
+                actor.model.save_weights(dirPath + str(e) +"_actormodel.h5", overwrite=True)
                 with open(dirPath + str(e) +"_actormodel.json", "w") as outfile:
                     json.dump(actor.model.to_json(), outfile)
 
-                critic.model.save_weights("criticmodel.h5", overwrite=True)
+                critic.model.save_weights(dirPath + str(e) +"_criticmodel.h5", overwrite=True)
                 with open(dirPath + str(e) +"_criticmodel.json", "w") as outfile:
                     json.dump(critic.model.to_json(), outfile)
 

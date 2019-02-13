@@ -2,6 +2,7 @@
 #include <move_base_msgs/MoveBaseAction.h>
 #include <actionlib/client/simple_action_client.h>
 #include <stdlib.h>
+#include <std_msgs/String.h>
 
 typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
 int yran;
@@ -32,7 +33,7 @@ srand (time(NULL));
 
   //tell the action client that we want to spin a thread by default
   MoveBaseClient ac("move_base", true);
-
+std_msgs::StringConstPtr msg = ros::topic::waitForMessage<std_msgs::String>("/chatter");
   //wait for the action server to come up
   
 

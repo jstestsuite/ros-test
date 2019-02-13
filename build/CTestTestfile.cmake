@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("boost-python-catkin-example-master")
 subdirs("gmapping_example")
 subdirs("hector_example")
 subdirs("mybot_control")

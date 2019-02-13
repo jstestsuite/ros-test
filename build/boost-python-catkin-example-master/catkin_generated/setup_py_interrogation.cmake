@@ -1,0 +1,6 @@
+set(boost_python_catkin_example_SETUP_PY_VERSION "1.0.0")
+set(boost_python_catkin_example_SETUP_PY_SCRIPTS "")
+set(boost_python_catkin_example_SETUP_PY_PACKAGES "boost_python_catkin_example")
+set(boost_python_catkin_example_SETUP_PY_PACKAGE_DIRS "src/boost_python_catkin_example")
+set(boost_python_catkin_example_SETUP_PY_MODULES "")
+set(boost_python_catkin_example_SETUP_PY_MODULE_DIRS "")

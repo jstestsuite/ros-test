@@ -95,6 +95,7 @@ simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/src/simple_naviga
 simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/src/simple_navigation_goals.cpp.o: /opt/ros/melodic/include/ros/wall_timer_options.h
 simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/src/simple_navigation_goals.cpp.o: /opt/ros/melodic/include/rosconsole/macros_generated.h
 simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/src/simple_navigation_goals.cpp.o: /opt/ros/melodic/include/std_msgs/Header.h
+simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/src/simple_navigation_goals.cpp.o: /opt/ros/melodic/include/std_msgs/String.h
 simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/src/simple_navigation_goals.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/src/simple_navigation_goals.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
 

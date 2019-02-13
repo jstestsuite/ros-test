@@ -122,6 +122,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/justin/ros_test/build/gtest/cmake_install.cmake")
+  include("/home/justin/ros_test/build/boost-python-catkin-example-master/cmake_install.cmake")
   include("/home/justin/ros_test/build/gmapping_example/cmake_install.cmake")
   include("/home/justin/ros_test/build/hector_example/cmake_install.cmake")
   include("/home/justin/ros_test/build/mybot_control/cmake_install.cmake")
